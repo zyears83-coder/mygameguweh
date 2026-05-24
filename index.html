@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Game HP-Ku</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121214;
+            color: #ffffff;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+            border-bottom: 2px solid #00ff87;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #00ff87;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #a8a8b3;
+            font-size: 1.1rem;
+        }
+
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .game-card {
+            background-color: #202024;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #29292e;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 255, 135, 0.15);
+            border-color: #00ff87;
+        }
+
+        .game-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 1px solid #29292e;
+        }
+
+        .game-info {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .game-title {
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+            color: #ffffff;
+        }
+
+        .game-genre {
+            align-self: flex-start;
+            background-color: #121214;
+            color: #00ff87;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            border: 1px solid #00ff87;
+        }
+
+        .game-desc {
+            color: #a8a8b3;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px 0;
+            color: #7c7c8a;
+            font-size: 0.9rem;
+            border-top: 1px solid #29292e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎮 MY MOBILE GAMING VAULT</h1>
+        <p>Koleksi game terbaik dan ter-seru yang terpasang di HP-ku.</p>
+    </header>
+
+    <main class="game-grid">
+        <!-- Game 1: Mobile Legends -->
+        <div class="game-card">
+            <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80" alt="Mobile Legends" class="game-image">
+            <div class="game-info">
+                <h2 class="game-title">Mobile Legends</h2>
+                <span class="game-genre">MOBA</span>
+                <p class="game-desc">Game andalan buat push rank bareng teman atau malah bikin emosi pas dapet tim beban. Selalu seru buat adu mekanik di Land of Dawn!</p>
+            </div>
+        </div>
+
+        <!-- Game 2: Clash of Clans -->
+        <div class="game-card">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?auto=format&fit=crop&w=600&q=80" alt="Clash of Clans" class="game-image">
+            <div class="game-info">
+                <h2 class="game-title">Clash of Clans</h2>
+                <span class="game-genre">Strategy</span>
+                <p class="game-desc">Ngemaster tata letak base, nungguin upgrade bangunan berhari-hari, dan ikutan Clan War demi merampok loot musuh.</p>
+            </div>
+        </div>
+
+        <!-- Game 3: Delta Force -->
+        <div class="game-card">
+            <img src="https://images.unsplash.com/photo-1553481187-be93c21490a9?auto=format&fit=crop&w=600&q=80" alt="Delta Force" class="game-image">
+            <div class="game-info">
+                <h2 class="game-title">Delta Force Mobile</h2>
+                <span class="game-genre">Tactical Shooter</span>
+                <p class="game-desc">Game tembak-tembakan taktis dengan skala pertempuran yang luas dan grafis memukau. Berasa jadi tentara elit sungguhan!</p>
+            </div>
+        </div>
+
+        <!-- Game 4: Valorant -->
+        <div class="game-card">
+            <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?auto=format&fit=crop&w=600&q=80" alt="Valorant Mobile" class="game-image">
+            <div class="game-info">
+                <h2 class="game-title">Valorant Mobile</h2>
+                <span class="game-genre">Tactical FPS</span>
+                <p class="game-desc">Adu tembak 5v5 menggunakan agen berkemampuan unik. Kombinasi akurasi tembakan dan penggunaan skill yang bikin tegang.</p>
+            </div>
+        </div>
+
+        <!-- Game 5: Minecraft -->
+        <div class="game-card">
+            <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80" alt="Minecraft" class="game-image">
+            <div class="game-info">
+                <h2 class="game-title">Minecraft</h2>
+                <span class="game-genre">Sandbox / Survival</span>
+                <p class="game-desc">Dunia kotak-kotak tanpa batas. Tempat bebas berkreasi membangun rumah impian atau bertahan hidup dari serangan zombie saat malam tiba.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Dibuat dengan 💚 untuk Koleksi Game Pribadi</p>
+    </footer>
+
+</body>
+</html>
